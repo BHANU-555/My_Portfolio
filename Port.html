@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M Bhanu Prakash | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1c1c1c;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00adb5;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00adb5;
+    }
+
+    .hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  background: url('https://cdn.jsdelivr.net/gh/Julian-Nash/net-bg@main/network-bg.svg') center/cover no-repeat, #0f0f0f;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+    .hero-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .intro-text {
+      flex: 1;
+      padding-right: 2rem;
+      text-align: left;
+    }
+
+    .intro-text h1 {
+      font-size: 2.8rem;
+      line-height: 1.4;
+    }
+
+    .intro-text span {
+      color: #00adb5;
+    }
+
+    .btn {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #00adb5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #007d85;
+    }
+
+    .profile-pic {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2rem;
+  position: relative;
+}
+
+    .hero-content img {
+      width: 250px;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(0, 173, 181, 0.4);
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      background-color: #1c1c1c;
+      border-bottom: 1px solid #333;
+    }
+
+    .section h2 {
+      color: #00adb5;
+      margin-bottom: 1rem;
+    }
+
+    .contact a {
+      color: #00adb5;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0f0f0f;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .intro-text {
+        padding-right: 0;
+        text-align: center;
+      }
+    }
+    .glow-frame {
+  position: relative;
+  width: 280px;
+  height: 550px;
+  border-radius: 50% / 45%;
+  background: radial-gradient(circle at center, #00adb5 0%, #0f0f0f 60%);
+  padding: 10px;
+  box-shadow: 0 0 25px rgba(0, 173, 181, 0.5), 0 0 50px rgba(0, 173, 181, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .glow-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50% / 45%;
+  border: 4px solid #00adb5;
+  box-shadow: inset 0 0 10px rgba(0, 173, 181, 0.5);
+}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="logo">Bhanu_Portfolio</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <div class="intro-text">
+        <h1>Hi Everyone!!!!<br>I'm <span>Bhanu Prakash</span></h1>
+        <p>I am into <span class="typing"></span></p>
+        <a href="#about" class="btn">About Me</a>
+      </div>
+      <div class="profile-pic">
+        <div class="glow-frame">
+  <img src="IMG_20250409_185130.jpg" alt="Bhanu Prakash">
+</div>
+      </div>
+      <div class="tech-decor">
+        <img src="https://cdn.jsdelivr.net/gh/Julian-Nash/net-bg@main/network-bg.svg" alt="tech bg pattern" style="width: 300px; opacity: 0.2; position: absolute; right: -50px; top: 50px; z-index: 0;">
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a BTech student skilled in Python with experience in the Smart India Hackathon on renewable energy solutions. My strengths in hard work and problem-solving, combined with a strong work ethic and emotional intelligence, drive me to contribute effectively to business goals and team success.</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Python, C++, Java, HTML, JavaScript</li>
+      <li>MySQL, Tableau, PowerBI</li>
+      <li>Data Analysis & Visualization</li>
+    </ul>
+    <h3>Non-Technical Skills</h3>
+    <ul>
+      <li>Effective Communication</li>
+      <li>Critical Thinking</li>
+      <li>Leadership & Teamwork</li>
+    </ul>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <p>Bachelor of Technology in Computer Science (Data Science),<br> Lamrin Tech Skills University, Punjab (2023 - 2027)</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects & Achievements</h2>
+    <ul>
+      <li>Smart India Hackathon 2024 – Solar Energy based solution</li>
+      <li>BuildWithIndia – Boosted creativity and innovation</li>
+      <li>Cosmic365.ai Internship – Data Analytics, Excel, Web Dev</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p>Email: bhanudiamondjee12@gmail.com</p>
+    <p>Phone: 9390924696</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/bhanu-prakash-46ba532b9/" target="_blank">Bhanu Prakash</a></p>
+<p>GitHub: <a href="https://github.com/BHANU-555" target="_blank">BHANU-555</a></p>
+    <p>Location: Anantapur, Andhra Pradesh</p>
+  </section>
+
+  <footer>
+    <p>© 2025 M Bhanu Prakash. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typedLine2 = new Typed(".typing", {
+      strings: ["Web Development", "Data Science", "AI Projects", "Creative Solutions"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+    });
+  </script>
+</body>
+</html>
